@@ -222,7 +222,7 @@ sudo groupmod -g 1000 elasticsearch
 
 # 3. Fix ownership of any LOCAL Elasticsearch files on this node
 # (data, logs, config — important so the process can still start)
-sudo chown -R elasticsearch:elasticsearch /var/lib/elasticsearch /var/log/elasticsearch /etc/elasticsearch 2>/dev/null || true
+sudo chown -R elasticsearch:elasticsearch /etc/elasticsearch /etc/sysconfig/elasticsearch /usr/share/elasticsearch /var/lib/elasticsearch /var/log/elasticsearch 2>/dev/null || true
 
 # 4. Start Elasticsearch again
 sudo systemctl start elasticsearch
