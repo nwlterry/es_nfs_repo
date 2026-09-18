@@ -1,5 +1,10 @@
 # Elasticsearch NFS Snapshot Repository Verification Troubleshooting Guide
 
+## Layout
+
+Runbook repository: the full NFS snapshot-repo guide stays in this README. Related lab: [elastic_stack_on_hyper-v](https://github.com/nwlterry/elastic_stack_on_hyper-v).
+
+
 **Date:** July 2026  
 **Context:** Elasticsearch 8.18.x cluster with data tiers (hot/cold) using shared filesystem (`fs`) snapshot repository backed by NFS.
 
@@ -430,3 +435,7 @@ This guide is based on official Elastic documentation and common production issu
 ---
 
 *Document version: 1.1 | Added detailed UID/GID mismatch diagnosis and remediation steps (July 2026) | For internal use / Terry's Elasticsearch environment*
+
+---
+
+See [GROUP.md](GROUP.md) for sibling repositories. Catalog: https://github.com/nwlterry/nwlterry
